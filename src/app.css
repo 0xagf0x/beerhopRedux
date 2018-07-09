@@ -1,0 +1,19 @@
+@import url("styles/colors.css");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    font-size: 16px;
+}
+
+body {
+  color: var(--dark);
+  font-weight: lighter;
+  font: 20px  Sans-serif;
+  margin-top: 20px;
+}
