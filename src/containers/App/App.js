@@ -1,15 +1,10 @@
-import React, { PropTypes } from 'react';
+import React, prop  from 'react';
 import { Router } from 'react-router';
 
 class App extends React.Component {
   static contextTypes = {
-    router: PropTypes.object
+    router: prop.object
   }
-
-  static propTypes = {
-    history: PropTypes.object.isRequired,
-    routes: PropTypes.element.isRequired
-  };
 
   get content() {
     return (
@@ -18,14 +13,18 @@ class App extends React.Component {
         history={this.props.history} />
     )
   }
+  static prop = {
+    history: prop.object.isRequired,
+    routes: prop.element.isRequired
+  };
+
 
   render () {
      return (
-       <div style={{ height: '100%' }}>
+       <div style={{ height: auto }}>
          {this.content}
        </div>
      )
    }
 }
-
 export default App;

@@ -1,18 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-import 'font-awesome/css/font-awesome.css'
+import React from '../../../Library/Caches/typescript/2.9/root_modules/@types/react'
+import ReactDOM from '../root_modules/@types/react-dom'
 import './app.css'
-
 import App from 'containers/App/App'
-
-import {hashHistory} from 'react-router'
 import makeRoutes from './routes'
-
+const root = document.querySelector('#root');
 const routes = makeRoutes()
-
-const mountNode = document.querySelector('#root');
 ReactDOM.render(
-  <App history={hashHistory}
-        routes={routes} />,
-mountNode);
+  <App history={testMain}
+    routes={routes} />,
+  root);

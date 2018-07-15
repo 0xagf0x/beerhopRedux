@@ -1,9 +1,9 @@
-import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import React from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react'
+import Route  from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-router'
 import Container from './Container'
 import Map from './Map/Map'
 import Detail from './Detail/Detail'
-export const makeMainRoutes = () => {
+export const newRoute = () => {
   return (
     <Route path="/" component={Container}>
       <Route path="map" component={Map}>
@@ -14,4 +14,4 @@ export const makeMainRoutes = () => {
     </Route>
   )
 }
-export default makeMainRoutes
+export default newRoute;
